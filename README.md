@@ -41,6 +41,27 @@ La lógica del backend está desarrollada con Spring Boot y WebFlux, aplicando u
 - Acceso a modelos compartidos filtrados por personaje o usuario desde MongoDB.
 ---
 
+## 🧱 Estructura del Proyecto
+
+```bash
+brawlarena_back/
+├── common/              # Constantes, lógica de poderes y validadores
+├── config/              # CORS, OpenAPI, puntuación reactiva
+├── exception/           # Excepciones personalizadas y handler global
+├── mongodb/
+│   ├── entity, dto, handler, repository, routers, service
+│   └── piezas, personajes, builds, modelos compartidos
+├── mysql/
+│   ├── entity, dto, handler, repository, router, service
+│   └── usuarios y autenticación
+├── security/            # JWT, filtros y configuración
+├── test/                # Cobertura exhaustiva de lógica y controladores
+│   ├── unitarios        # Auth, Users, Characters, Gallery, Build
+│   └── integración      # Seguridad y flujo JWT
+└── BrawlarenaApplication.java
+```
+---
+
 ## 💻 Tecnologías Utilizadas
 
 ### Backend
@@ -70,26 +91,7 @@ La lógica del backend está desarrollada con Spring Boot y WebFlux, aplicando u
 
 ---
 
-## 🧱 Estructura del Proyecto
 
-```bash
-brawlarena_back/
-├── common/              # Constantes, lógica de poderes y validadores
-├── config/              # CORS, OpenAPI, puntuación reactiva
-├── exception/           # Excepciones personalizadas y handler global
-├── mongodb/
-│   ├── entity, dto, handler, repository, routers, service
-│   └── piezas, personajes, builds, modelos compartidos
-├── mysql/
-│   ├── entity, dto, handler, repository, router, service
-│   └── usuarios y autenticación
-├── security/            # JWT, filtros y configuración
-├── test/                # Cobertura exhaustiva de lógica y controladores
-│   ├── unitarios        # Auth, Users, Characters, Gallery, Build
-│   └── integración      # Seguridad y flujo JWT
-└── BrawlarenaApplication.java
-```
----
 
 ## 🧪 Testing
 El backend incluye testing unitario y de integración cubriendo:

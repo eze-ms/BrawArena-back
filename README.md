@@ -11,33 +11,34 @@
 
 ## 📄 Descripción
 
-**Brawl Arena** es una aplicación web competitiva en la que los jugadores ensamblan personajes 3D modulares tipo LEGO, activan poderes especiales según sus piezas, y compiten por tiempo y precisión. El sistema incluye desbloqueo de personajes mediante tokens, una galería pública de modelos compartidos y un completo panel de administración.
+**Brawl Arena** es una plataforma backend desarrollada con Java y Spring Boot (WebFlux), que implementa un backend reactivo con enfoque modular. Gestiona toda la lógica de una aplicación competitiva donde los jugadores ensamblan personajes 3D tipo LEGO, activan poderes estratégicos según sus piezas y compiten por precisión. El sistema incluye autenticación con JWT, control de builds y tokens, galería pública y panel administrativo, todo estructurado sobre una arquitectura escalable, segura y orientada a componentes.
 
 ---
 
 
 ## 🌐 Demo
 
-🔗 [brawl-arena-front.vercel.app](https://brawl-arena-front.vercel.app/)
+🔗 [brawl-arena-vercel.app](https://brawl-arena-front.vercel.app/)
 
 ---
 
 ## ✨ Funcionalidades
+La lógica del backend está desarrollada con Spring Boot y WebFlux, aplicando un enfoque reactivo, modular y desacoplado, que permite una gestión eficiente del estado, validaciones y control de flujo asincrónico. La arquitectura separa handlers, servicios, validadores y repositorios para mantener un sistema limpio, testeable y escalable.
 
 ### Jugadores
-- Registro e inicio de sesión mediante nickname y contraseña.
-- Montaje de personajes con piezas modulares (regulares, falsas y especiales).
-- Activación de poderes basada en las piezas colocadas.
-- Desbloqueo de personajes usando un sistema de tokens.
-- Compartición de modelos en la galería pública.
-- Consulta de builds previos y builds pendientes.
+- Autenticación segura mediante JWT, validada con filtros personalizados.
+- Registro/login mediante nickname, validaciones y control de errores consistentes.
+- Montaje de personajes con validación de piezas falsas/especiales mediante servicios y validadores desacoplados.
+- Activación dinámica de poderes, calculada por lógica central en ScoreCalculator.
+- Gestión de tokens para desbloqueo de personajes con control de saldo reactivo.
+- Compartición de modelos en MongoDB con normalización y soporte de imagen.
+- Consulta de historial de builds y recuperación de builds pendientes.
 
 ### Administradores
-- Destacar modelos en la galería ("Jugador de la Semana").
-- Otorgar tokens a jugadores manualmente.
-- Eliminar personajes de la base de datos.
-- Ver modelos compartidos por usuario o personaje.
-
+- Destacar modelos en la galería pública (con lógica protegida por rol).
+- Otorgar tokens a usuarios desde endpoints seguros y cacheados.
+- Eliminación lógica de personajes y piezas asociadas.
+- Acceso a modelos compartidos filtrados por personaje o usuario desde MongoDB.
 ---
 
 ## 💻 Tecnologías Utilizadas
@@ -136,4 +137,4 @@ npm run dev
 ```
 ---
 
-© 2024. Proyecto desarrollado por Ezequiel Macchi Seoane
+© 2025. Proyecto desarrollado por Ezequiel Macchi Seoane

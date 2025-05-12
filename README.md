@@ -15,6 +15,13 @@
 
 ---
 
+
+## 🌐 Demo
+
+🔗 [brawl-arena-front.vercel.app](https://brawl-arena-front.vercel.app/)
+
+---
+
 ## ✨ Funcionalidades
 
 ### Jugadores
@@ -81,6 +88,7 @@ brawlarena_back/
 │   └── integración      # Seguridad y flujo JWT
 └── BrawlarenaApplication.java
 ```
+---
 
 ## 🧪 Testing
 El backend incluye testing unitario y de integración cubriendo:
@@ -117,7 +125,7 @@ git clone https://github.com/eze-ms/BrawlArena-front.git
 
 ```
 
-#### Instalar dependencias del backend
+#### Instalar dependencias 
 ```bash
 npm install
 ```
@@ -127,7 +135,5 @@ npm install
 npm run dev
 ```
 ---
-
-
 
 © 2024. Proyecto desarrollado por Ezequiel Macchi Seoane

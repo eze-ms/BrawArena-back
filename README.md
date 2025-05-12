@@ -1,7 +1,12 @@
 # Brawl Arena
+![Status](https://img.shields.io/badge/status-live-success?style=flat-square)
+![MongoDB](https://img.shields.io/badge/database-MongoDB-brightgreen?style=flat-square)
+![MySQL](https://img.shields.io/badge/database-MySQL-brightgreen?style=flat-square)
+![Backend](https://img.shields.io/badge/Backend-Java-orange?style=flat-square)
+
 
 ## 📄 Descripción
-Brawl Arena es una aplicación web interactiva inspirada en Thetan Arena y LEGO, donde los jugadores montan personajes modulares en 3D, tipo puzzle, desbloqueando poderes y compitiendo por tiempo y precisión. Incluye una galería pública de modelos, puntuaciones y recompensas mediante tokens.
+Brawl Arena es una aplicación web competitiva e interactiva donde los jugadores ensamblan personajes 3D modulares al estilo LEGO, activan poderes y compiten por tiempo y precisión. También pueden compartir sus modelos en una galería pública y desbloquear contenido usando tokens.
 
 ### Funcionalidades
 - Registro/Login con nickname y contraseña.
@@ -28,12 +33,12 @@ Brawl Arena es una aplicación web interactiva inspirada en Thetan Arena y LEGO,
 ---
 
 ## 📋 Requisitos
-- **Java Development:** Version 17 or higher.
-- **Node.js :** Version 18 or higher.
+- **Java Development:** Version 17 o superior.
+- **Node.js :** Version 18 o superior.
 
 ---
 
 ## 🛠️ Instalación
-1. Clone the repository:
+1. Clonar repositorio:
    ```bash
-   git clone https://github.com/eze-ms/BrawArena-back
+   git clone https://github.com/eze-ms/BrawlArena-back

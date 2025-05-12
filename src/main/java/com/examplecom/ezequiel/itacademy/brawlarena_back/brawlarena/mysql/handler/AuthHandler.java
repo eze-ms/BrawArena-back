@@ -87,9 +87,11 @@ public class AuthHandler {
                 .doOnNext(user -> logger.info("Registrando nuevo usuario: {}", user))
                 .flatMap(user ->
                         characterRepository.findAll()
+                                .doOnNext(character -> logger.info("Personaje encontrado en registro: {} (coste: {})", character.getName(), character.getCost()))
                                 .filter(character -> character.getCost() == 0)
                                 .map(character -> character.getId())
                                 .collectList()
+                                .doOnNext(freeIds -> logger.info("IDs de personajes gratuitos encontrados: {}", freeIds))
                                 .flatMap(freeIds -> {
                                     try {
                                         ObjectMapper objectMapper = new ObjectMapper();

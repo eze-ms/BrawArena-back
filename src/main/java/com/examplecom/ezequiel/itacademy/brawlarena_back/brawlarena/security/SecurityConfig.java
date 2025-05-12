@@ -56,7 +56,6 @@ public class SecurityConfig {
                                 "/gallery/highlighted",
                                 "/gallery/public",
                                 "/characters/all"
-
                         ).permitAll()
 
                         // Rutas protegidas (modificación)
